@@ -88,4 +88,3 @@ make install
 echo ''
 echo '===================================='
 echo ''
-warp -v 
