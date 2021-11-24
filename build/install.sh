@@ -37,25 +37,6 @@ else
   exit 1
 fi
 
-#####################
-# Install Warp-CLI
-###################
-
-echo ''
-echo '===================================='
-echo '        Installing Warp-CLI'
-echo '===================================='
-echo ''
-
-if ! test -f $base; then
-  rm -R $base
-fi
-
-git clone https://github.com/JustinTimperio/warp-cli.git $base
-
-# Link to /usr/bin
-ln -sf $base/core/warp.py /usr/bin/warp
-
 #################################
 # Manual Build of WDT and Libs
 ###############################
